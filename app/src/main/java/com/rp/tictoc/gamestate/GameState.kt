@@ -2,7 +2,8 @@ package com.rp.tictoc.gamestate
 
 /**
 * Created by Rishi Porwal 
-*/data class GameState(val board: List<CellValue> = List(9) { CellValue.EMPTY }, // 3x3 game board
+*/
+data class GameState(val board: List<CellValue> = List(9) { CellValue.EMPTY }, // 3x3 game board
                        val currentPlayer: Player = Player.X, // Track current player
                        val gameStatus: GameStatus = GameStatus.ONGOING, // Game status
                        val winningCells: List<Int> = emptyList(), // Winning combination indices

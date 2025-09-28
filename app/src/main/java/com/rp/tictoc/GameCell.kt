@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -32,6 +33,7 @@ import com.rp.tictoc.gamestate.CellValue
 /**
  * Enhanced GameCell with light attractive colors and winning zoom-out effect
  */
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun GameCell(
     cellValue: CellValue,
